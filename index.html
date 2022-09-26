@@ -6,14 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Apple Landing Page</title>
 </head>
 
 <body>
-    <nav>
-        <a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a>
+    <nav class="display-none">
+        <i class="fa-regular fa-bars"></i>
+        <i class="fa-brands fa-apple"></i>
+        <i class="fa-light fa-bag-shopping"></i>
+    </nav>
+
+    <nav class="wide-nav">
+        <a href="#"><i class="fa-brands fa-apple"></i></a>
         <a href="#">Store</a>
         <a href="#">Mac</a>
         <a href="#">iPad</a>
@@ -24,8 +31,8 @@
         <a href="#">Only on Apple</a>
         <a href="#">Accessories</a>
         <a href="#">Support</a>
-        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></i></a>
+        <a href="#"><i class="fa-light fa-bag-shopping"></i></a>
     </nav>
 
     <div class="header"><br>
@@ -134,8 +141,20 @@
         </div>
     </div>
 
-    <div class="tv-series">
-        <img src="img/fnb__brvfy48gzsz6_medium_2x.jpg" alt="tv-series image">
+    <div class="slider-container">
+        <div class="image-container">
+            <img src="img/img-series-black-bird.jpg" alt="image">
+            <img src="img/img-series-central.jpg" alt="image">
+            <img src="img/img-series-gutsy.jpg" alt="image">
+            <img src="img/img-series-life.jpg" alt="image">
+            <img src="img/img-series-memorial.jpg" alt="image">
+            <img src="img/img-series-see.jpg" alt="image">
+            <img src="img/img-series-severance.jpg" alt="image">
+            <img src="img/img-series-sisters.jpg" alt="image">
+            <img src="img/img-series-ted.jpg" alt="image">
+            <img src="img/img-series-memorial.jpg" alt="image">
+            <img src="img/img-series-black-bird.jpg" alt="image">
+        </div>
     </div>
 
     <footer>
@@ -186,6 +205,53 @@
                 rights reserved.</li>
             <hr>
         </ul>
+
+        <section class="options">
+            <ul>
+                <li>Shop and Learn</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>Services</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>Account</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>Apple Store</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>For Business</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>For Education</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>For Education</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>For Healthcare</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>For Government</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>Apple Values</li>
+                <li>+</li>
+            </ul>
+            <ul>
+                <li>About Apple</li>
+                <li>+</li>
+            </ul>
+        </section>
 
         <section class="footer-row">
             <ul class="footer-div">
@@ -281,10 +347,13 @@
             <p>copyright © 2022 Apple Inc. All rights reserved.</p>
             <ul>
                 <li><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sales and Refunds</a> |
-                    <a href="#">Legal</a> | <a href="#">Site Map</a> <a href="#" class="end">United States</a></li>
+                    <a href="#">Legal</a> | <a href="#">Site Map</a> <a href="#" class="end">United States</a>
+                </li>
             </ul>
         </div>
     </footer>
-</body> 
+
+    <script src="main.js"></script>
+</body>
 
 </html>
