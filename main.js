@@ -18,3 +18,23 @@ function updateImg() {
     updateImg();
   }, 2000);
 }
+
+const list = document.querySelector(".list-expand");
+const optionList = document.querySelector(".option-list");
+const borderBottom = document.querySelector(".border-btm");
+
+list.addEventListener("click", () => {
+  optionList.style.display = "block";
+  borderBottom.style.borderBottom = "none";
+
+  list.addEventListener("click", () => {
+    const visibility = optionList.style.display;
+    if (visibility == "block") {
+      optionList.style.display = "none";
+      borderBottom.style.borderBottom ="0.01px solid #afafb3"
+    } else {
+      optionList.style.display = "block";
+      borderBottom.style.borderBottom = "none";
+    }
+  });
+});

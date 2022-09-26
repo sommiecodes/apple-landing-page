@@ -287,10 +287,28 @@ footer ul {
     display: flex;
     justify-content: space-between;
     border-bottom: 0.01px solid #afafb3;
+    cursor: pointer;
 }
 
 .options ul li {
     padding: 8px 5px 0 5px;
+}
+
+.option-list {
+    display: none;
+    list-style-type: none;
+    padding: 0 30px;
+    border-bottom: 0.01px solid #afafb3;
+}
+
+.option-list a {
+    text-decoration: none;
+    color: #6e6e73;
+    font-size: small;
+}
+
+.option-list a:hover {
+    text-decoration: underline;
 }
 
 footer ul li {
