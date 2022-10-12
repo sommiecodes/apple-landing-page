@@ -19,19 +19,18 @@ function updateImg() {
   }, 2000);
 }
 
-const list = document.querySelector(".list-expand");
-const optionList = document.querySelector(".option-list");
-const borderBottom = document.querySelector(".border-btm");
+const lists = document.querySelectorAll(".list-expand");
+const optionLists = document.querySelectorAll(".option-list");
+const borderBottoms = document.querySelectorAll(".border-btm");
 
-list.addEventListener("click", () => {
-  optionList.style.display = "block";
-  borderBottom.style.borderBottom = "none";
-
+lists.forEach((list) => {
   list.addEventListener("click", () => {
-    const visibility = optionList.style.display;
-    if (visibility == "block") {
+    const optionList = optionLists;
+    const display = optionList.style.display;
+
+    if (display == "block") {
       optionList.style.display = "none";
-      borderBottom.style.borderBottom ="0.01px solid #afafb3"
+      borderBottom.style.borderBottom = "0.01px solid #afafb3";
     } else {
       optionList.style.display = "block";
       borderBottom.style.borderBottom = "none";

@@ -29,9 +29,9 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #aaa;
-    font-size: 11px;
-    margin-left: 30px;
+    color: rgb(196, 191, 191);
+    font-size: 12px;
+    margin-left: 45px;
     letter-spacing: 1px;
     font-family: Helvetica, sans-serif;
 }
@@ -290,6 +290,10 @@ footer ul {
     cursor: pointer;
 }
 
+.options ul:hover {
+    color: black;
+}
+
 .options ul li {
     padding: 8px 5px 0 5px;
 }
@@ -297,8 +301,9 @@ footer ul {
 .option-list {
     display: none;
     list-style-type: none;
-    padding: 0 30px;
+    padding: 0 20px 10px 20px;
     border-bottom: 0.01px solid #afafb3;
+    transition: all 0.3s;
 }
 
 .option-list a {
